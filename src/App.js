@@ -1,33 +1,25 @@
-import Header from './components/Header'
-import Social_link from './components/Social_link'
-import About_myself from './components/About_myself'
-import Education from './components/Education'
-import Certificate from './components/Certificate'
-import Programming from './components/Programming'
-import Achievements from './components/Achievements'
-import Activities from './components/Activities'
-import Projects from './components/Projects'
-import Footer from './components/Footer'
+import React from "react";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import "./App.scss";
+import Layout from "./Layout/Layout/Layout.jsx";
+import Home from "./Pages/Home/index.jsx";
+import ScrollToTop from "./utils/scrollToTop";
+
+
 
 function App() {
-
-
-    return (
-        <div className="App">
-
-            <Header/>
-            <Social_link/>
-            <About_myself/>
-            <Education/>
-            <Certificate/>
-            <Programming/>
-            <Achievements/>
-            <Activities/>
-            <Projects/>
-            <Footer/>
-
-        </div>
-    );
-};
+  return (
+    <>
+      <BrowserRouter>
+      <ScrollToTop />
+        <Routes>
+          <Route path="/" element={<Layout />}>
+            <Route index element={<Home />} />
+          </Route>
+        </Routes>
+      </BrowserRouter>
+    </>
+  );
+}
 
 export default App;
