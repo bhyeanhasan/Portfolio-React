@@ -11,6 +11,7 @@ import Certificates from "./components/Certificates";
 import Extracurricular from "./components/Extracurricular";
 import Visuals from "./components/Visuals";
 import Footer from "./components/Footer";
+
 function App() {
     return (
         <div className="App">
