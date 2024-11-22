@@ -1,0 +1,13 @@
+.about-img {
+    border: medium;
+    border-radius: 50px;
+    height: 450px;
+}
+
+@media (max-width: 700px) {
+    .about-img {
+        height: 300px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}

@@ -1,4 +1,5 @@
 import React from 'react';
+import './award.css';
 
 function Award(props) {
     const awards = [
@@ -36,8 +37,7 @@ function Award(props) {
 
                     <div className="col-lg-5 about-left p-3">
                         <img
-                            style={{border: 'medium', borderRadius: '10px', height: '350px'}}
-                            className="img-fluid shadow"
+                            className="award-img img-fluid shadow"
                             src={awards[0].image}
                             alt="Formal Picture"
                         />

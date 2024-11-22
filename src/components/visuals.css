@@ -1,0 +1,10 @@
+.project-panel{
+    height: 350px;
+    width: 100%;
+}
+
+@media only screen and (max-width: 700px) {
+    .project-panel{
+        height: 200px;
+    }
+}

@@ -1,4 +1,7 @@
 import React, {Component} from 'react';
+import './about.css';
+
+import {Link} from "react-router-dom";
 
 class About extends Component {
     render() {
@@ -9,7 +12,7 @@ class About extends Component {
 
                         <div className="col-lg-6 about-left p-4">
                             <img
-                                style={{border: 'medium', borderRadius: '50px', height: '450px'}}
+                                className='about-img'
                                 src="img/deffence1.jpeg"
                                 alt="Md. Babul Hasan (Noyon) bhyeanhasan"
                             />
@@ -46,12 +49,11 @@ class About extends Component {
                             <br/>
                             <br/>
 
-                            <a
-                                href="Resume_Professional.html"
-                                className="btn-block primary-btn my-1"
-                                data-text="Resume"
-                                target="_blank"
-                                rel="noopener noreferrer"
+
+                            <Link to="/resume"
+                                  className="btn-block primary-btn my-1"
+                                  data-text="Resume"
+                                  rel="noopener noreferrer"
                             >
                                 <span>R</span>
                                 <span>e</span>
@@ -59,7 +61,7 @@ class About extends Component {
                                 <span>u</span>
                                 <span>m</span>
                                 <span>e</span>
-                            </a>
+                            </Link>
                         </div>
                     </div>
                 </div>

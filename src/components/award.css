@@ -1,0 +1,11 @@
+.award-img{
+    border: medium;
+    border-radius: 10px;
+    height: 350px;
+}
+
+@media (max-width: 700px) {
+    .award-img{
+        height: 250px;
+    }
+}

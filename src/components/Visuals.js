@@ -1,4 +1,5 @@
 import React from 'react';
+import './visuals.css';
 
 function Visuals(props) {
     const videos = [

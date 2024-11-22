@@ -3,7 +3,7 @@ import React from 'react';
 function Experience(props) {
     const experiences = [
         {
-            role: "ML & Backend Engineer (Intern)",
+            role: "Software Engineer (ML & Backend)",
             company: "Intelsense AI",
             companyLink: "https://www.intelsense.ai/",
             location: "Dhaka, Bangladesh",
@@ -15,13 +15,13 @@ function Experience(props) {
             company: "Manash Sarker, Assistant Professor",
             companyLink: "",
             location: "Patuakhali Science and Technology University",
-            date: "March 2023 - Present",
-            skills: "Deep Learning, Data Visualization, Traffic Prediction, Spatio-Temporal Data Analysis, Time Series Analysis"
+            date: "March 2023 - October 2024",
+            skills: "Deep Learning, Data Science, Traffic Prediction, Spatio-Temporal Data, Time Series Analysis"
         },
         {
             role: "ICU Monitoring System (IOT)",
             company: "Bangladesh Bureau of Educational Information & Statistics",
-            companyLink: "",
+            companyLink: "https://banbeis.gov.bd/",
             location: "(BANBEIS), Ministry of Education, Bangladesh",
             date: "July 2023 - July 2024",
             skills: "Raspberry Pi, Arduino, Sensors, React, Socket Programming, Django Channels, Channel Layers"

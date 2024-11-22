@@ -1,7 +1,7 @@
 import React from 'react';
 
 function Projects(props) {
-        const projects = [
+    const projects = [
         {
             title: "Amin Crockeries (Ecommerce)",
             description: "The Amin Crockeries project is a Django-based web application. It features inventory management, customer order handling, and sales report generation. Administrators can manage products and track stock levels, while customers can browse products, place orders, and receive status updates.",
@@ -17,19 +17,20 @@ function Projects(props) {
             liveView: "https://pypi.org/project/to-sequential/"
         },
         {
-            title: "Dhanshiri Students Welfare Association",
-            description: "The DSWA web application represents a student-driven endeavor with the objective of creating a platform for students hailing from Jhalokathi District. Purpose is to facilitate connections between students, teachers, and alumni, while also serving as a resource for staying informed about upcoming events.",
-            image: "img/img_1.png",
-            sourceCode: "https://github.com/bhyeanhasan/Dhanshiri-Studets-Welfare-Association-DSWA",
-            liveView: "https://dswapstu.pythonanywhere.com/"
-        },
-        {
             title: "Online Image Editor",
             description: "A dynamic online image editor utilizing Django, and OpenCV for image processing. Leveraging DTL, Bootstrap, HTML, and CSS for frontend design, I ensured responsive UI/UX. Proficient in system design and project management, I delivered a seamless platform for image manipulation and editing.",
             image: "img/img_3.png",
             sourceCode: "https://github.com/bhyeanhasan/Online-Image-Editor",
             liveView: "http://bhyeanhasan.pythonanywhere.com/"
         },
+        {
+            title: "Dhanshiri Students Welfare Association",
+            description: "The DSWA web application represents a student-driven endeavor with the objective of creating a platform for students hailing from Jhalokathi District. Purpose is to facilitate connections between students, teachers, and alumni, while also serving as a resource for staying informed about upcoming events.",
+            image: "img/img_1.png",
+            sourceCode: "https://github.com/bhyeanhasan/Dhanshiri-Studets-Welfare-Association-DSWA",
+            liveView: "https://dswapstu.pythonanywhere.com/"
+        },
+
         {
             title: "Student Diary (Faculty of CSE, PSTU)",
             description: "The CSE-Diary project is a Flutter mobile app for my faculty that uses the Django Rest Framework for the backend.",
@@ -42,7 +43,7 @@ function Projects(props) {
             description: "Enables automatic page reloading at user-defined intervals, enhancing productivity and convenience by ensuring that your web pages stay updated without manual intervention.",
             image: "img/front.png",
             sourceCode: "https://github.com/bhyeanhasan/Google-Chrome-Extention-Automatic-Page-Reloader",
-            liveView: "https://github.com/bhyeanhasan/Google-Chrome-Extention-Automatic-Page-Reloader"
+            liveView: ""
         }
     ];
     return (
@@ -59,7 +60,7 @@ function Projects(props) {
                         <div className="container">
                             <div className="row">
                                 {projects.map((project, index) => (
-                                    <div className="col-md-6 mb-5" key={index}>
+                                    <div className="col-md-4 mb-5" key={index}>
                                         <div className="card shadow-lg">
                                             <img src={project.image} className="card__image" alt={project.title}/>
                                             <div className="card__overlay">
@@ -70,6 +71,27 @@ function Projects(props) {
                                                     <div style={{width: '100%'}} className="card__header-text">
                                                         <h3 className="card__title text-center">{project.title}</h3>
                                                         <div className="d-flex justify-content-between mt-2">
+
+                                                            {project.liveView ? (
+
+                                                                    <a
+                                                                        target="_blank"
+                                                                        href={project.liveView}
+                                                                        style={{
+                                                                            borderRadius: '20px',
+                                                                            borderStyle: 'solid',
+                                                                            color: 'white',
+                                                                            fontSize: '12px'
+                                                                        }}
+                                                                        className="btn btn-danger"
+                                                                        rel="noopener noreferrer"
+                                                                    >
+                                                                        <i className="fa fa-paper-plane p-1"
+                                                                           aria-hidden="true"></i>
+                                                                        Live View
+                                                                    </a>) :
+                                                                (<a></a>)
+                                                            }
                                                             <a
                                                                 target="_blank"
                                                                 href={project.sourceCode}
@@ -86,22 +108,8 @@ function Projects(props) {
                                                                    aria-hidden="true"></i>
                                                                 Source Code
                                                             </a>
-                                                            <a
-                                                                target="_blank"
-                                                                href={project.liveView}
-                                                                style={{
-                                                                    borderRadius: '20px',
-                                                                    borderStyle: 'solid',
-                                                                    color: 'white',
-                                                                    fontSize: '12px'
-                                                                }}
-                                                                className="btn btn-danger"
-                                                                rel="noopener noreferrer"
-                                                            >
-                                                                <i className="fa fa-paper-plane p-1"
-                                                                   aria-hidden="true"></i>
-                                                                Live View
-                                                            </a>
+
+
                                                         </div>
                                                     </div>
                                                 </div>
