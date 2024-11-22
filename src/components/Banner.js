@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import './banner.css';
 
 class Banner extends Component {
     render() {
@@ -15,16 +16,15 @@ class Banner extends Component {
                                 >
                                     <a href="index.html">
                                         <img
+                                            className="logo"
                                             alt="logo of bhyeanhasan"
-                                            style={{height: '65px'}}
                                             src="img/bh_logo.png"
                                         />
                                     </a>
                                 </div>
 
                                 <h1
-                                    style={{paddingBottom: '0px', marginBottom: '10px'}}
-                                    className="wow fadeInUp"
+                                    className="intro wow fadeInUp"
                                     data-wow-duration="2s"
                                     data-wow-delay="1.7s"
                                 >
@@ -32,7 +32,7 @@ class Banner extends Component {
                                 </h1>
 
                                 <div
-                                    className="designation mb-50 wow fadeInUp"
+                                    className="designation wow fadeInUp"
                                     data-wow-duration="1s"
                                     data-wow-delay="3s"
                                 >

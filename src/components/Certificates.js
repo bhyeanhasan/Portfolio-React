@@ -1,4 +1,5 @@
 import React from 'react';
+import './certificate.css';
 
 function Certificates(props) {
       const certificates = [

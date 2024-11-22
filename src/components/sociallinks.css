@@ -1,0 +1,19 @@
+
+.brand-wrap {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+
+@media only screen and (max-width: 700px) {
+
+    .social {
+        font-size: 12px;
+    }
+
+    .brand-wrap {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+}

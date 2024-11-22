@@ -1,0 +1,38 @@
+
+.logo {
+    height: 65px;
+}
+
+.intro {
+    padding-bottom: 0px;
+    margin-bottom: 10px;
+}
+
+.designation{
+    margin-bottom: 30px;
+}
+
+
+@media only screen and (max-width: 700px) {
+
+    .logo {
+        height: 55px;
+    }
+
+    .intro {
+        margin-bottom: 0px;
+        padding-bottom: 0px;
+    }
+
+    .banner-content h1 {
+
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    .designation{
+    margin-bottom: 20px;
+}
+
+
+
+}

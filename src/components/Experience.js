@@ -1,4 +1,5 @@
 import React from 'react';
+import './experience.css';
 
 function Experience(props) {
     const experiences = [
@@ -40,27 +41,27 @@ function Experience(props) {
 
 
                 {experiences.map((experience, index) => (
-                    <div className="col-md-12" key={index}>
+                    <div className="col-md-12 mb-3" key={index}>
                         <div
                             className={`shadow experience-border wow ${index === 0 ? 'fadeInDown' : index === 1 ? 'fadeInRight' : 'fadeInUp'} p-5 my-2`}>
                             <div className="row">
                                 <div className={`col-md-${experience.companyLink ? '7' : '6'} experience`}>
-                                    <h3>{experience.role}</h3>
+                                    <h3 className='experience-role'>{experience.role}</h3>
                                     {experience.companyLink ? (
-                                        <h5>
+                                        <h5 className="company">
                                             <a href={experience.companyLink} target="_blank" rel="noopener noreferrer">
                                                 {experience.company}
                                             </a>
                                         </h5>
                                     ) : (
-                                        <h5>{experience.company}</h5>
+                                        <h5 className="company">{experience.company}</h5>
                                     )}
-                                    <h5>{experience.location}</h5>
+                                    <h5 className="location">{experience.location}</h5>
                                 </div>
                                 <div
                                     className={`col-md-${experience.companyLink ? '5' : '6'} experience-details experience`}>
-                                    <h5 style={{color: 'green'}}>{experience.date}</h5>
-                                    <h5>{experience.skills}</h5>
+                                    <h5 className="time">{experience.date}</h5>
+                                    <h5 className="skills">{experience.skills}</h5>
                                 </div>
                             </div>
                         </div>

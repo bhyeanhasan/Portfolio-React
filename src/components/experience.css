@@ -1,0 +1,32 @@
+.time {
+    color: #e45447;
+}
+
+
+@media only screen and (max-width: 700px) {
+
+    .experience-role {
+        font-size: 18px;
+    }
+
+    .company {
+        font-size: 15px;
+
+    }
+
+    .location {
+        font-size: 14px;
+        font-weight: normal;
+    }
+
+    .time {
+        font-size: 14px;
+        margin-top: 10px;
+    }
+
+    .skills{
+        font-size: 14px;
+        font-weight: normal;
+    }
+
+}

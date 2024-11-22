@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import './sociallinks.css';
 
 class SocialLink extends Component {
     render() {
@@ -8,7 +9,7 @@ class SocialLink extends Component {
                     <div className="brand-wrap">
                         <div className="row align-items-center active-brand-carusel justify-content-start no-gutters">
                             <div className="col single-brand">
-                                <h4>
+                                <h4 className="social">
                                     <a
                                         style={{color: '#e45447'}}
                                         target="_blank"
@@ -22,7 +23,7 @@ class SocialLink extends Component {
                             </div>
 
                             <div className="col single-brand">
-                                <h4>
+                                <h4 className="social">
                                     <a
                                         style={{color: '#e45447'}}
                                         target="_blank"
@@ -36,7 +37,7 @@ class SocialLink extends Component {
                             </div>
 
                             <div className="col single-brand">
-                                <h4>
+                                <h4 className="social">
                                     <a
                                         style={{color: '#e45447'}}
                                         target="_blank"
@@ -50,7 +51,7 @@ class SocialLink extends Component {
                             </div>
 
                             <div className="col single-brand">
-                                <h4>
+                                <h4 className="social">
                                     <a
                                         style={{color: '#e45447'}}
                                         target="_blank"
@@ -63,19 +64,7 @@ class SocialLink extends Component {
                                 </h4>
                             </div>
 
-                            <div className="col single-brand">
-                                <h4>
-                                    <a
-                                        style={{color: '#e45447'}}
-                                        target="_blank"
-                                        href="https://www.instagram.com/bhyeanhasan/"
-                                        rel="noopener noreferrer"
-                                    >
-                                        <i className="fa fa-instagram" aria-hidden="true"></i><br/>
-                                        Instagram
-                                    </a>
-                                </h4>
-                            </div>
+
                         </div>
                     </div>
                 </div>
