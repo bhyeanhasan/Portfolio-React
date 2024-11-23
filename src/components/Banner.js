@@ -29,6 +29,7 @@ class Banner extends Component {
                                     data-wow-delay="1.7s"
                                 >
                                     Md. Babul Hasan
+                                    <br></br>Noyon
                                 </h1>
 
                                 <div

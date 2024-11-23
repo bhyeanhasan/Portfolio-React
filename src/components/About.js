@@ -23,28 +23,20 @@ class About extends Component {
                                 <h2>About Myself</h2>
                             </div>
 
-                            <a
-                                href="https://github.com/bhyeanhasan"
-                                className="btn-block primary-btn white my-1"
-                                data-text="Projects and Works"
-                                target="_blank"
-                                rel="noopener noreferrer"
+                            <Link to="/projects"
+                                  className="btn-block primary-btn white my-1"
+                                  data-text="Projects and Works"
+                                  rel="noopener noreferrer"
                             >
-                                <span>G</span>
-                                <span>i</span>
-                                <span>t</span>
-                                <span>h</span>
-                                <span>u</span>
-                                <span>b</span>
-                                <span></span>
                                 <span>P</span>
-                                <span>r</span>
-                                <span>o</span>
-                                <span>f</span>
-                                <span>i</span>
-                                <span>l</span>
-                                <span>e</span>
-                            </a>
+                                <span>R</span>
+                                <span>O</span>
+                                <span>J</span>
+                                <span>E</span>
+                                <span>C</span>
+                                <span>T</span>
+                                <span>S</span>
+                            </Link>
 
                             <br/>
                             <br/>
