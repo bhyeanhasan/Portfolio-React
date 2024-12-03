@@ -1,3 +1,7 @@
+.main-body{
+    background: whitesmoke;
+}
+
 
 .txt {
     color: dimgray;
@@ -8,15 +12,11 @@
     background-color: white;
     /*padding: 20px 50px;*/
     /*margin: 50px 100px;*/
-    padding: 1% 5%;
-    margin: 5% 8%;
+    padding: 1% 2%;
+    margin: 0% 25%;
 }
 
-a {
-    color: olivedrab;
-    background-color: transparent;
-    text-decoration: none;
-}
+
 
 #mypicture {
     height: 180px;
@@ -33,10 +33,7 @@ a {
     text-align: left;
 }
 
-.container {
-    /*padding-left: 15%;*/
-    margin-top: 20px;
-}
+
 
 .sub {
     margin-left: 3%;
@@ -62,33 +59,18 @@ td {
 }
 
 
-p {
-    margin: 5px;
-}
 
-h4 {
-    margin-bottom: 5px;
-}
 
-.top-intro {
-    margin-top: 50px;
-}
 
-body {
-    margin-left: 20%;
-    margin-right: 20%;
-    background-color: whitesmoke;
-}
+
+
 
 .footer {
     padding: 20px;
 }
 
 @media screen and (max-width: 900px) {
-    body {
-        margin-left: 5%;
-        margin-right: 5%;
-    }
+
 
     .DivIdToPrint {
         background-color: white;
@@ -110,10 +92,7 @@ body {
 }
 
 @media screen and (max-width: 850px) {
-    body {
-        margin-left: 5%;
-        margin-right: 5%;
-    }
+
 
     .DivIdToPrint {
         background-color: white;
