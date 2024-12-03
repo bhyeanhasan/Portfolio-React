@@ -23,13 +23,16 @@ class Banner extends Component {
                                     </a>
                                 </div>
 
+                                <h2 className="mt-4">Personal Portfolio of</h2>
+                                <hr></hr>
+
                                 <h1
                                     className="intro wow fadeInUp"
                                     data-wow-duration="2s"
                                     data-wow-delay="1.7s"
                                 >
                                     Md. Babul Hasan
-                                    <br></br>Noyon
+                                    {/*<br></br>Noyon*/}
                                 </h1>
 
                                 <div
