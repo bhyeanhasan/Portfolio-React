@@ -1,5 +1,10 @@
 import React, {Component} from 'react';
 import './sociallinks.css';
+import {Swiper, SwiperSlide} from 'swiper/react';
+import {Navigation, Pagination, Scrollbar, A11y, Autoplay} from 'swiper/modules';
+import 'swiper/css';  // Import the Swiper core styles
+import 'swiper/css/navigation'; // Optional: Import navigation styles
+import 'swiper/css/pagination'; // Optional: Import pagination styles
 
 const socialLinks = [
     {
@@ -44,7 +49,7 @@ const socialLinks = [
         iconClass: 'fa fa-instagram',
         color: '#e45447',
     },
-        {
+    {
         name: 'Blog',
         url: 'https://bhyeanhasan.blogspot.com/',
         iconClass: 'fa fa-globe',
@@ -59,22 +64,63 @@ class SocialLink extends Component {
                 <div className="container mt-5">
                     <div className="brand-wrap">
                         <div className="row align-items-center  ">
-                            {socialLinks.map((link, index) => (
-                                <div key={index} className="col single-brand my-1">
-                                    <h4 className="social">
-                                        <a
-                                            style={{color: link.color}}
-                                            target="_blank"
-                                            href={link.url}
-                                            rel="noopener noreferrer"
-                                        >
-                                            <i className={link.iconClass} aria-hidden="true"></i>
-                                            <br/>
-                                            {link.name}
-                                        </a>
-                                    </h4>
-                                </div>
-                            ))}
+
+                            <Swiper
+                                modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
+                                spaceBetween={5}
+                                slidesPerView={5}
+                                scrollbar={{draggable: true}}
+                                loop
+                                autoplay={{
+                                    delay: 1500, // 2.5 seconds between slides
+                                    disableOnInteraction: false, // Keep autoplay going even after user interaction
+                                }}
+                            >
+                                {/*<SwiperSlide>Slide 1</SwiperSlide>*/}
+                                {/*<SwiperSlide>Slide 2</SwiperSlide>*/}
+                                {/*<SwiperSlide>Slide 3</SwiperSlide>*/}
+                                {/*<SwiperSlide>Slide 4</SwiperSlide>*/}
+
+
+                                {socialLinks.map((link, index) => (
+                                    <SwiperSlide>
+                                        <div key={index} className="col single-brand my-1">
+                                            <h4 className="social">
+                                                <a
+                                                    style={{color: link.color}}
+                                                    target="_blank"
+                                                    href={link.url}
+                                                    rel="noopener noreferrer"
+                                                >
+                                                    <i className={link.iconClass} aria-hidden="true"></i>
+                                                    <br/>
+                                                    {link.name}
+                                                </a>
+                                            </h4>
+                                        </div>
+                                    </SwiperSlide>
+                                ))}
+
+                            </Swiper>
+
+                            {/*{socialLinks.map((link, index) => (*/}
+                            {/*    <div key={index} className="col single-brand my-1">*/}
+                            {/*        <h4 className="social">*/}
+                            {/*            <a*/}
+                            {/*                style={{color: link.color}}*/}
+                            {/*                target="_blank"*/}
+                            {/*                href={link.url}*/}
+                            {/*                rel="noopener noreferrer"*/}
+                            {/*            >*/}
+                            {/*                <i className={link.iconClass} aria-hidden="true"></i>*/}
+                            {/*                <br/>*/}
+                            {/*                {link.name}*/}
+                            {/*            </a>*/}
+                            {/*        </h4>*/}
+                            {/*    </div>*/}
+                            {/*))}*/}
+
+
                         </div>
                     </div>
                 </div>
