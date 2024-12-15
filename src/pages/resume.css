@@ -2,7 +2,6 @@
     background: whitesmoke;
 }
 
-
 .txt {
     color: dimgray;
     font-weight: bold;
@@ -60,7 +59,10 @@ td {
 
 
 
-
+.dnload{
+    margin-left: 5%;
+    margin-right: 5%;
+}
 
 
 

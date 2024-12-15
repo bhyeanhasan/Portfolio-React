@@ -13,7 +13,7 @@ class About extends Component {
                         <div className="col-lg-6 about-left p-4">
                             <img
                                 className='about-img'
-                                src="img/deffence1.jpeg"
+                                src="img/ppp.jpg"
                                 alt="Md. Babul Hasan (Noyon) bhyeanhasan"
                             />
                         </div>

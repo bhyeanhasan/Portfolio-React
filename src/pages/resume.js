@@ -1,8 +1,27 @@
-import React from 'react';
+import React, {useRef} from 'react';
 import './resume.css';
 import {Link} from "react-router-dom";
 
 function Resume(props) {
+    const printRef = useRef(null);
+  const handlePrint = () => {
+    if (printRef.current) {
+      const originalContents = document.body.innerHTML;
+      const printContents = printRef.current.innerHTML;
+
+      // Ensure that you replace the body content only if the ref is valid
+      document.body.innerHTML = printContents;
+
+      window.print();
+
+      // Restore original content after printing
+      document.body.innerHTML = originalContents;
+      window.location.reload(); // Reload to reset the page
+    } else {
+      console.error("Print element is not found or not yet rendered.");
+    }
+  };
+
     return (
         <div className=''>
 
@@ -10,29 +29,16 @@ function Resume(props) {
             <div className='main-body'>
                 <div className="container">
 
-                    <nav className="navbar navbar-expand navbar-light bg-light">
-                        <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                            <span className="navbar-toggler-icon"></span>
-                        </button>
-                        <div className="collapse navbar-collapse" id="navbarNav">
-                            <ul className="navbar-nav w-100">
-                                <li className="nav-item active">
-                                    <Link to="/"
-                                          className="btn-block primary-btn white "
-                                          data-text=""
-                                          rel="noopener noreferrer"
-                                    > Home </Link>
-                                </li>
-                                <li className="nav-item ml-auto">
-                                    <a className="btn-block primary-btn white " href="#">Download</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </nav>
+
+                    <div className="dnload d-flex justify-content-between  py-3">
+                        <Link to="/" className="primary-btn white py-2">Home</Link>
+                        <a href="#" onClick={handlePrint} className="primary-btn white py-2">Download</a>
+                    </div>
+
+
                 </div>
 
-                <div>
+                <div ref={printRef}>
                     <div style={{backgroundColor: 'white'}} className="DivIdToPrint">
                         <div className="container top-intro">
 

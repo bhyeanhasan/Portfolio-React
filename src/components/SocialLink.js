@@ -68,7 +68,7 @@ class SocialLink extends Component {
                             <Swiper
                                 modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
                                 spaceBetween={5}
-                                slidesPerView={5}
+                                slidesPerView={4}
                                 scrollbar={{draggable: true}}
                                 loop
                                 autoplay={{
