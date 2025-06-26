@@ -12,6 +12,7 @@ import Certificates from "../components/Certificates";
 import Extracurricular from "../components/Extracurricular";
 import Visuals from "../components/Visuals";
 import Footer from "../components/Footer";
+import Research from "../components/Research";
 
 
 function Home(props) {
@@ -22,6 +23,7 @@ function Home(props) {
             <About/>
             <Experience/>
             <Education/>
+            <Research/>
             <Programming/>
             <Projects/>
             <Award/>

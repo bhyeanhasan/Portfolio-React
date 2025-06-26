@@ -3,13 +3,29 @@ import './experience.css';
 
 function Experience(props) {
     const experiences = [
+                {
+            role: "Software Engineer (AI & Backend)",
+            company: "Greentage Ltd.",
+            companyLink: "https://www.linkedin.com/company/greentage",
+            location: "Dhaka, Bangladesh",
+            date: "October 2024 - Present",
+            skills: "AI, ML, Django"
+        },
         {
-            role: "Software Engineer (ML & Backend)",
+            role: "Software Engineer (Backend & ML)",
             company: "Intelsense AI",
             companyLink: "https://www.intelsense.ai/",
             location: "Dhaka, Bangladesh",
-            date: "April 2024 - Present",
-            skills: "Django, FastAPI, Machine Learning, React"
+            date: "April 2024 - October 2024",
+            skills: "Django, FastAPI, ML, React"
+        },
+                {
+            role: "Smart Health Monitoring System (IOT)",
+            company: "Bangladesh Bureau of Educational Information & Statistics",
+            companyLink: "https://banbeis.gov.bd/",
+            location: "(BANBEIS), Ministry of Education, Bangladesh",
+            date: "July 2023 - July 2024",
+            skills: "Raspberry Pi, Arduino, Sensors, React, Socket Programming, Django Channels, Channel Layers"
         },
         {
             role: "Research Assistant",
@@ -18,15 +34,8 @@ function Experience(props) {
             location: "Patuakhali Science and Technology University",
             date: "March 2023 - October 2024",
             skills: "Deep Learning, Data Science, Traffic Prediction, Spatio-Temporal Data, Time Series Analysis"
-        },
-        {
-            role: "ICU Monitoring System (IOT)",
-            company: "Bangladesh Bureau of Educational Information & Statistics",
-            companyLink: "https://banbeis.gov.bd/",
-            location: "(BANBEIS), Ministry of Education, Bangladesh",
-            date: "July 2023 - July 2024",
-            skills: "Raspberry Pi, Arduino, Sensors, React, Socket Programming, Django Channels, Channel Layers"
         }
+
     ];
     return (
         <section className="job-area mb-5 mt-5">
@@ -41,7 +50,7 @@ function Experience(props) {
 
 
                 {experiences.map((experience, index) => (
-                    <div className="col-md-12 mb-3" key={index}>
+                    <div className="col-md-12 mb-2" key={index}>
                         <div
                             className={`shadow experience-border wow ${index === 0 ? 'fadeInDown' : index === 1 ? 'fadeInRight' : 'fadeInUp'} p-5 my-2`}>
                             <div className="row">

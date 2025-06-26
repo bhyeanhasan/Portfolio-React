@@ -4,9 +4,18 @@ import './education.css';
 
 function Education() {
     const educationData = [
+                {
+            id: 0,
+            institution: 'Bangladesh University of Engineering and Technology - (BUET)',
+            location: '',
+            faculty: 'Institute of Information and Communication Technology (IICT)',
+            link: 'https://www.buet.ac.bd/',
+            degree: 'M.Sc. Engineering in ICT',
+            buttonText: 'M.Sc. Engineering in ICT',
+        },
         {
             id: 1,
-            institution: 'Patuakhali Science and Technology University',
+            institution: 'Patuakhali Science and Technology University - (PSTU)',
             location: '',
             faculty: 'Faculty of Computer Science and Engineering',
             link: 'http://www.pstu.ac.bd/',
@@ -16,7 +25,7 @@ function Education() {
         {
             id: 2,
             institution: 'Govt. Syed Hatem Ali College',
-            location: 'Barishal',
+            // location: 'Barishal',
             faculty: 'Science Group',
             link: 'http://www.gshac.gov.bd',
             degree: 'H.S.C.',
@@ -25,21 +34,21 @@ function Education() {
         {
             id: 3,
             institution: 'Jhalokathi Govt. High School',
-            location: 'Jhalokathi',
+            // location: 'Jhalokathi',
             faculty: 'Science Group',
             link: 'http://www.barisalboard.gov.bd/101633/news.html',
             degree: 'J.S.C. & S.S.C.',
             buttonText: 'J.S.C. & S.S.C.',
         },
-        {
-            id: 4,
-            institution: 'Mirzapur Govt. Primary School',
-            location: 'Jhalokathi',
-            faculty: 'Ponabalia, Mirzapur',
-            link: '#',
-            degree: 'P.S.C.',
-            buttonText: 'P.S.C.',
-        },
+        // {
+        //     id: 4,
+        //     institution: 'Mirzapur Govt. Primary School',
+        //     location: 'Jhalokathi',
+        //     faculty: 'Ponabalia, Mirzapur',
+        //     link: '#',
+        //     degree: 'P.S.C.',
+        //     buttonText: 'P.S.C.',
+        // },
     ];
 
     return (
