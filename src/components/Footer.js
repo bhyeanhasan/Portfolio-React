@@ -26,6 +26,8 @@ function Footer(props) {
                         <a href="https://about.me/bhyeanhasan" target="_blank" rel="noopener noreferrer">
                             Md. Babul Hasan (Noyon)
                         </a>
+                        <h6> 1024312001@iict.buet.ac.bd & bhyean16@cse.pstu.ac.bd</h6>
+
                     </p>
                 </div>
             </div>

@@ -27,13 +27,14 @@ class Banner extends Component {
                                 <hr></hr>
 
                                 <h1
-                                    className="intro wow fadeInUp"
+                                    className="intro wow fadeInUp text-center"
                                     data-wow-duration="2s"
                                     data-wow-delay="1.7s"
                                 >
                                     Md. Babul Hasan
-                                    {/*<br></br>Noyon*/}
+                                    <br></br>NoYoN
                                 </h1>
+
 
                                 <div
                                     className="designation wow fadeInUp"
