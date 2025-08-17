@@ -4,10 +4,17 @@ import './research.css';
 function Research(props) {
     const researches = [
         {
-            title: "RESEARCH TITLE: Unraveling Urban Traffic Congestion Patterns in Bangladesh\n",
+            title: "Unraveling Urban Traffic Congestion Patterns in Bangladesh\n",
             site: "11th International Conference on Vehicle Technology and Intelligent Transport Systems - VEHITS 2025",
             link: "https://www.scitepress.org/PublicationsDetail.aspx?ID=C6x1Jje/Ncw=&t=1",
             location: "Porto, Portugal"
+        },
+
+        {
+            title: "IoT-Enabled Real-Time Health Analytics Using Integrated Multi-Modal Biomedical Sensors\n",
+            site: "Journal of the Patuakhali Science and Technology University",
+            link: "https://journal.pstu.ac.bd/",
+            location: "Dumki, Patuakhali"
         },
 
     ];
@@ -24,12 +31,12 @@ function Research(props) {
 
 
                 {researches.map((research, index) => (
-                    <div className="col-md-12 mb-2" key={index}>
+                    <div className="col-md-12 my-2" key={index}>
                         <div
-                            className={`shadow experience-border wow  'fadeInUp'}`}>
+                            className='shadow experience-border wow fadeInUp'>
                             <div className="row">
                                 <div className={`col-md-12'}  p-5`}>
-                                    <h3 className='experience-role'>{research.title}</h3>
+                                    <h4 className='experience-role'><i style={{color:'darkblue'}} className="fa fa-book" aria-hidden="true"></i> {research.title}</h4>
                                     {research.link ? (
                                         <h5 className="company">
                                             <a href={research.link} target="_blank" rel="noopener noreferrer">
@@ -39,7 +46,7 @@ function Research(props) {
                                     ) : (
                                         <h5 className="company">{research.site}</h5>
                                     )}
-                                    <h5 className="location">{research.location}</h5>
+                                    <h5 className="location"><i class="fa fa-globe" aria-hidden="true"></i> {research.location}</h5>
                                 </div>
 
                             </div>

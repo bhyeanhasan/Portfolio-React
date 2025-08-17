@@ -1,5 +1,6 @@
 import React from 'react';
 import Footer from "../components/Footer";
+
 function Projects(props) {
     const projects = [
         {
@@ -30,6 +31,20 @@ function Projects(props) {
             sourceCode: "https://github.com/bhyeanhasan/Dhanshiri-Studets-Welfare-Association-DSWA",
             liveView: "https://dswapstu.pythonanywhere.com/"
         },
+        {
+            title: "Online PDF TOOLS",
+            description: 'Online PDF Tools is a web-based platform that provides users with easy-to-use utilities for managing PDF documents. With a clean interface and fast processing, the tool aims to help students, professionals, and businesses work with PDFs efficiently without needing to install additional software.',
+            image: "img/pdftools.png",
+            sourceCode: "https://github.com/bhyeanhasan/PdfTools",
+            liveView: "https://onlinepdftools.pythonanywhere.com/"
+        },
+        {
+            title: "Research Paper Manager",
+            description: 'Online PDF Tools is a web-based platform that provides users with easy-to-use utilities for managing PDF documents. With a clean interface and fast processing, the tool aims to help students, professionals, and businesses work with PDFs efficiently without needing to install additional software.',
+            image: "img/research.png",
+            sourceCode: "https://github.com/bhyeanhasan/Research-Paper-Manager-",
+            liveView: "https://bhyeanpaper.pythonanywhere.com/"
+        },
 
         {
             title: "Student Diary (Faculty of CSE, PSTU)",
@@ -45,6 +60,7 @@ function Projects(props) {
             sourceCode: "https://github.com/bhyeanhasan/Google-Chrome-Extention-Automatic-Page-Reloader",
             liveView: ""
         }
+
     ];
     return (
         <section className="job-area pt-5">
@@ -54,7 +70,9 @@ function Projects(props) {
                         <div className="section-title">
                             <h2>Projects</h2>
 
-                            <h4>Check the latest projects at <a target={'_blank'} href={'https://github.com/bhyeanhasan'}>Github Repository</a></h4>
+                            <h4>Check the latest projects at <a target={'_blank'}
+                                                                href={'https://github.com/bhyeanhasan'}>Github
+                                Repository</a></h4>
                         </div>
                     </div>
 
@@ -125,7 +143,7 @@ function Projects(props) {
                     </div>
                 </div>
             </div>
-                    <Footer/>
+            <Footer/>
 
         </section>
 
