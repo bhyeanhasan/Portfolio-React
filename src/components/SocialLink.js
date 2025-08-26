@@ -15,7 +15,7 @@ const socialLinks = [
     },
     {
         name: 'LinkedIn',
-        url: 'https://www.linkedin.com/in/bhyeanhasan/',
+        url: 'https://www.linkedin.com/in/bhyean/',
         iconClass: 'fa fa-linkedin-square',
         color: '#e45447',
     },
@@ -39,7 +39,7 @@ const socialLinks = [
     },
     {
         name: 'X',
-        url: 'https://twitter.com/bhyeanhasan',
+        url: 'https://x.com/avoid_noyon',
         iconClass: 'fa fa-twitter-square',
         color: '#e45447',
     },

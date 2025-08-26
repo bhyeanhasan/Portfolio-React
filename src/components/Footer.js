@@ -11,22 +11,23 @@ function Footer(props) {
                         <div className="footer-top flex-column mt-3">
                             <div className="footer-logo">
                                 <a href="#">
-                                    <img style={{height: '100px'}} src="img/bh_logo.png" alt="Logo"/>
+                                    <img style={{height: '60px'}} src="img/bh_logo.png" alt="Logo"/>
                                 </a>
-                                <h3 className="p-2">Thanks for Visiting</h3>
+                                <h3 className="p-1">Thanks for Visiting</h3>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div className="row footer-bottom justify-content-center">
                     <p className="col-lg-8 col-sm-12 footer-text pb-4">
-                        Copyright &copy; {currentYear}
-                        <br/>
                         All rights reserved{' '}
                         <a href="https://about.me/bhyeanhasan" target="_blank" rel="noopener noreferrer">
                             Md. Babul Hasan (Noyon)
                         </a>
-                        <h6> 1024312001@iict.buet.ac.bd & bhyean16@cse.pstu.ac.bd</h6>
+                        <br/>
+                        <h6 style={{color:'darkblue'}}> 1024312001@iict.buet.ac.bd - bhyean16@cse.pstu.ac.bd</h6>
+                        Copyright &copy; {currentYear}
+
 
                     </p>
                 </div>

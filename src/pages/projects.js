@@ -65,23 +65,24 @@ function Projects(props) {
     return (
         <section className="job-area pt-5">
             <div className="container">
-                <div className="row d-flex justify-content-between align-items-end">
+                <div className="row d-flex justify-content-between align-items-end mx-5">
                     <div className="col-lg-12">
-                        <div className="section-title">
-                            <h2>Projects</h2>
+                        <div className="text-center">
+                            <h1>PROJECTS</h1>
+                            <h4>Check the latest projects <a target={'_blank'}
+                                                                href={'https://github.com/bhyeanhasan'}><i class="fa fa-github" aria-hidden="true"></i> Github
+                                </a></h4>
+                            <hr></hr>
 
-                            <h4>Check the latest projects at <a target={'_blank'}
-                                                                href={'https://github.com/bhyeanhasan'}>Github
-                                Repository</a></h4>
                         </div>
                     </div>
 
-                    <div className="col-md-12 mb-3">
+                    <div className="col-md-12">
                         <div className="container">
                             <div className="row">
                                 {projects.map((project, index) => (
-                                    <div className="col-md-6 mb-5" key={index}>
-                                        <div className="card shadow-lg">
+                                    <div className="col-md-6 my-5" key={index}>
+                                        <div className="card shadow-lg mx-3">
                                             <img src={project.image} className="card__image" alt={project.title}/>
                                             <div className="card__overlay">
                                                 <div className="card__header">
