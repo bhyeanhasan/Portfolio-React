@@ -4,6 +4,13 @@ import './research.css';
 function Research(props) {
     const researches = [
         {
+            title: "A machine learning framework for promoter identification: integrating explainable AI for genomic insights\n",
+            site: "Journal of Electrical Systems and Information Technology (JESIT)",
+            link: "https://link.springer.com/article/10.1186/s43067-026-00339-9",
+            location: "Springer Nature"
+        },
+
+        {
             title: "Unraveling Urban Traffic Congestion Patterns in Bangladesh\n",
             site: "11th International Conference on Vehicle Technology and Intelligent Transport Systems - VEHITS 2025",
             link: "https://www.scitepress.org/PublicationsDetail.aspx?ID=C6x1Jje/Ncw=&t=1",
@@ -36,7 +43,9 @@ function Research(props) {
                             className='shadow experience-border wow fadeInUp'>
                             <div className="row">
                                 <div className={`col-md-12'}  p-5`}>
-                                    <h4 className='experience-role'><i style={{color:'darkblue'}} className="fa fa-book" aria-hidden="true"></i> {research.title}</h4>
+                                    <h4 className='experience-role'><i style={{color: 'darkblue'}}
+                                                                       className="fa fa-book"
+                                                                       aria-hidden="true"></i> {research.title}</h4>
                                     {research.link ? (
                                         <h5 className="company">
                                             <a href={research.link} target="_blank" rel="noopener noreferrer">
@@ -46,7 +55,8 @@ function Research(props) {
                                     ) : (
                                         <h5 className="company">{research.site}</h5>
                                     )}
-                                    <h5 className="location"><i class="fa fa-globe" aria-hidden="true"></i> {research.location}</h5>
+                                    <h5 className="location"><i class="fa fa-globe"
+                                                                aria-hidden="true"></i> {research.location}</h5>
                                 </div>
 
                             </div>

@@ -1,121 +1,343 @@
-.main-body{
-    background: whitesmoke;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+.main-body {
+    background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%);
+    font-family: 'Inter', sans-serif;
+    color: #333;
+    padding-bottom: 60px;
+    min-height: 100vh;
 }
 
-.txt {
-    color: dimgray;
-    font-weight: bold;
+.dnload {
+    margin: 0 auto;
+    max-width: 900px;
+    padding: 30px 15px;
+}
+
+.dnload .primary-btn {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border-radius: 8px;
+    padding: 10px 25px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    box-shadow: 0 4px 15px rgba(118, 75, 162, 0.3);
+    border: none;
+    display: inline-block;
+}
+
+.dnload .primary-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(118, 75, 162, 0.45);
+    color: white;
 }
 
 .DivIdToPrint {
-    background-color: white;
-    /*padding: 20px 50px;*/
-    /*margin: 50px 100px;*/
-    padding: 1% 2%;
-    margin: 0% 25%;
+    background-color: #ffffff;
+    padding: 50px;
+    margin: 0 auto;
+    max-width: 900px;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+    font-family: 'Inter', sans-serif;
+    position: relative;
+    overflow: hidden;
 }
 
+.DivIdToPrint::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 8px;
+    background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+}
 
+.top-intro {
+    padding-bottom: 30px;
+    position: relative;
+}
 
 #mypicture {
     height: 180px;
     width: 180px;
-    /*float: right;*/
-    border-radius: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    border: 5px solid #fff;
+    transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+#mypicture:hover {
+    transform: scale(1.08) rotate(2deg);
+}
+
+.top-intro h3 {
+    font-weight: 700;
+    color: #1a202c;
+    font-size: 2.8rem;
+    margin-bottom: 20px;
+    margin-top: 15px;
+    letter-spacing: -0.5px;
+}
+
+.top-intro .txt,
+.top-intro p {
+    color: #4a5568;
+    margin-bottom: 12px;
+    font-size: 1.3rem;
+    display: flex;
+    align-items: center;
+}
+
+.top-intro i {
+    color: #667eea;
+    margin-right: 12px;
+    font-size: 1.4rem;
+}
+
+.top-intro a {
+    color: #667eea;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.2s ease;
+}
+
+.top-intro a:hover {
+    color: #764ba2;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.08), rgba(0, 0, 0, 0));
+    margin: 35px 0;
+}
+
+.DivIdToPrint .container {
+    width: 100% !important;
+    /* Override bootstrap container widths inside print area */
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.DivIdToPrint .container:not(.top-intro) {
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 30px;
+    margin-bottom: 30px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.04);
+    border: 1px solid rgba(0, 0, 0, 0.03);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.DivIdToPrint .container:not(.top-intro):hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+}
+
+.DivIdToPrint h4 {
+    color: #2d3748;
+    font-weight: 700;
+    font-size: 1.9rem;
+    margin-bottom: 25px;
+    margin-top: 0;
+    position: relative;
+    padding-bottom: 12px;
+}
+
+.DivIdToPrint h4::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 4px;
+    width: 60px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-radius: 4px;
+}
+
+.sub {
+    color: #4a5568;
+    line-height: 1.8;
+    font-size: 1.25rem;
+    margin-left: 0;
+    /* Removing the 3% left margin to align with card */
+}
+
+.sub p {
+    margin-bottom: 15px;
+}
+
+.txt {
+    color: #1a202c;
+    font-weight: 700;
+}
+
+table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 10px;
+}
+
+td {
+    padding: 15px 20px;
+    background: #f8fafc;
+    border: none !important;
+    /* override bootstrap if any */
+}
+
+td.txt {
+    width: 35%;
+    border-radius: 10px 0 0 10px;
+    border-left: 4px solid #667eea !important;
+    background: #f1f5f9;
+    font-weight: 600;
+    color: #2d3748;
+    font-size: 1.25rem;
+}
+
+td:not(.txt) {
+    border-radius: 0 10px 10px 0;
+    color: #4a5568;
+    font-size: 1.25rem;
+}
+
+.sub a {
+    color: #667eea;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.2s ease, transform 0.2s ease;
+    display: inline-block;
+}
+
+.sub a:hover {
+    color: #764ba2;
+    transform: translateY(-1px);
+}
+
+.sub a i {
+    margin-right: 6px;
 }
 
 .right-center {
     text-align: right;
+    color: #718096;
+    font-size: 1.15rem;
+    font-weight: 500;
 }
 
 .left-center {
     text-align: left;
 }
 
-
-
-.sub {
-    margin-left: 3%;
+.mt-4 {
+    margin-top: 30px !important;
 }
 
-table {
-    width: 100%;
+/* Print Styles */
+@media print {
+    body {
+        background-color: white !important;
+        margin: 0;
+        padding: 0;
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
+    }
+
+    .DivIdToPrint {
+        margin: 0 !important;
+        padding: 0 !important;
+        box-shadow: none !important;
+        max-width: none !important;
+        border-radius: 0 !important;
+    }
+
+    .DivIdToPrint::before {
+        display: none !important;
+    }
+
+    .DivIdToPrint .container:not(.top-intro) {
+        box-shadow: none !important;
+        border: none !important;
+        padding: 5px 0 !important;
+        margin-bottom: 15px !important;
+        transform: none !important;
+        page-break-inside: avoid;
+    }
+
+    td {
+        background: transparent !important;
+        padding: 8px 0 !important;
+    }
+
+    td.txt {
+        background: transparent !important;
+        border-left: none !important;
+        width: 35% !important;
+        display: table-cell !important;
+    }
+
+    h4::after {
+        display: none !important;
+        /* Hide gradient underline for print */
+    }
+
+    h4 {
+        border-bottom: 2px solid #333;
+    }
 }
 
-td {
-    /* margin-right: 10%; */
-}
-
-.sub {
-    white-space: normal;
-    /* word-break: break-all; */
-    word-break: normal;
-}
-
-.sup {
-    white-space: normal;
-    word-break: break-all;
-}
-
-
-
-.dnload{
-    margin-left: 5%;
-    margin-right: 5%;
-}
-
-
-
-
-.footer {
-    padding: 20px;
-}
-
+/* Responsive adjustments */
 @media screen and (max-width: 900px) {
-
+    .dnload {
+        padding: 20px 15px;
+    }
 
     .DivIdToPrint {
-        background-color: white;
-        /*padding: 20px 50px;*/
-        /*margin: 50px 100px;*/
-        padding: 1px 2%;
-        margin: 2% 3%;
+        padding: 30px 20px;
+        margin: 15px;
+        border-radius: 16px;
     }
 
-    #mypicture {
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    .right-center {
+    .top-intro .row {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         text-align: center;
     }
 
-}
-
-@media screen and (max-width: 850px) {
-
-
-    .DivIdToPrint {
-        background-color: white;
-        /*padding: 20px 50px;*/
-        /*margin: 50px 100px;*/
-        padding: 1px 1%;
-        margin: 2% 1%;
-    }
-
     #mypicture {
-        margin-left: auto;
-        margin-right: auto;
+        margin: 0 auto 25px auto;
+        display: block;
     }
 
-    .right-center {
-        text-align: center;
-    }
-
+    .right-center,
     .left-center {
         text-align: center;
-        margin-bottom: 2%;
     }
 
+    .top-intro .txt,
+    .top-intro p,
+    .top-intro .row {
+        justify-content: center;
+    }
+
+    td.txt {
+        display: block;
+        width: 100% !important;
+        border-radius: 8px 8px 0 0;
+        border-left: none !important;
+        border-top: 4px solid #667eea !important;
+        padding-bottom: 5px;
+    }
+
+    td:not(.txt) {
+        display: block;
+        width: 100%;
+        border-radius: 0 0 8px 8px;
+        padding-top: 5px;
+    }
 }

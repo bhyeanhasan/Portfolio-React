@@ -3,12 +3,20 @@ import './experience.css';
 
 function Experience(props) {
     const experiences = [
-                {
+        {
+            role: "Software Engineer (AI & Backend)",
+            company: "THT-Space Electrical Company Ltd.",
+            companyLink: "https://www.linkedin.com/company/thtuepz/posts/?feedView=all",
+            location: "Nilphamari, Rangpur",
+            date: "April 2026 - Present",
+            skills: "AI, ML, Deep Learning, Django"
+        },
+        {
             role: "Software Engineer (AI & Backend)",
             company: "Greentage Ltd.",
             companyLink: "https://www.linkedin.com/company/greentage",
             location: "Dhaka, Bangladesh",
-            date: "October 2024 - Present",
+            date: "October 2024 - March 2026",
             skills: "AI, ML, Django"
         },
         {
@@ -19,7 +27,7 @@ function Experience(props) {
             date: "April 2024 - October 2024",
             skills: "Django, FastAPI, ML, React"
         },
-                {
+        {
             role: "Smart Health Monitoring System (IOT)",
             company: "Bangladesh Bureau of Educational Information & Statistics",
             companyLink: "https://banbeis.gov.bd/",

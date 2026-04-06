@@ -1,26 +1,26 @@
-import React, {useRef} from 'react';
+import React, { useRef } from 'react';
 import './resume.css';
-import {Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 
 function Resume(props) {
     const printRef = useRef(null);
-  const handlePrint = () => {
-    if (printRef.current) {
-      const originalContents = document.body.innerHTML;
-      const printContents = printRef.current.innerHTML;
+    const handlePrint = () => {
+        if (printRef.current) {
+            const originalContents = document.body.innerHTML;
+            const printContents = printRef.current.innerHTML;
 
-      // Ensure that you replace the body content only if the ref is valid
-      document.body.innerHTML = printContents;
+            // Ensure that you replace the body content only if the ref is valid
+            document.body.innerHTML = printContents;
 
-      window.print();
+            window.print();
 
-      // Restore original content after printing
-      document.body.innerHTML = originalContents;
-      window.location.reload(); // Reload to reset the page
-    } else {
-      console.error("Print element is not found or not yet rendered.");
-    }
-  };
+            // Restore original content after printing
+            document.body.innerHTML = originalContents;
+            window.location.reload(); // Reload to reset the page
+        } else {
+            console.error("Print element is not found or not yet rendered.");
+        }
+    };
 
     return (
         <div className=''>
@@ -39,7 +39,7 @@ function Resume(props) {
                 </div>
 
                 <div ref={printRef}>
-                    <div style={{backgroundColor: 'white'}} className="DivIdToPrint">
+                    <div style={{ backgroundColor: 'white' }} className="DivIdToPrint">
                         <div className="container top-intro">
 
 
@@ -106,7 +106,7 @@ function Resume(props) {
                             </div>
                         </div>
 
-                        <hr/>
+                        <hr />
 
                         <div className="container">
                             <div className="row">
@@ -131,36 +131,36 @@ function Resume(props) {
                                     <div className="sub">
                                         <table>
                                             <tbody>
-                                            <tr>
-                                                <td className="txt" style={{width: '35%'}}>
-                                                    Domain Expertise
-                                                </td>
-                                                <td>Django Web, Django REST, React, ML, Deep Learning</td>
-                                            </tr>
-                                            <tr>
-                                                <td className="txt">Programming Lang</td>
-                                                <td>Python, C++, JavaScript, Java</td>
-                                            </tr>
-                                            <tr>
-                                                <td className="txt">ML Framework / Package</td>
-                                                <td>TensorFlow, Pytorch, Numpy, Pandas, Seaborn</td>
-                                            </tr>
-                                            <tr>
-                                                <td className="txt">Internet of Things (IoT)</td>
-                                                <td>Raspberry Pi, NodeMCU, Arduino</td>
-                                            </tr>
-                                            <tr>
-                                                <td className="txt">Database</td>
-                                                <td>MySQL, PostgreSQL, SQLite, SQL Server, Oracle, MongoDB</td>
-                                            </tr>
-                                            <tr>
-                                                <td className="txt">Simulation Software</td>
-                                                <td>MATLAB, PSPICE, R Studio</td>
-                                            </tr>
-                                            <tr>
-                                                <td className="txt">Miscellaneous Tool</td>
-                                                <td>Git (Version Control), Github, Azure, Docker, Latex</td>
-                                            </tr>
+                                                <tr>
+                                                    <td className="txt" style={{ width: '35%' }}>
+                                                        Domain Expertise
+                                                    </td>
+                                                    <td>Django Web, Django REST, React, ML, Deep Learning</td>
+                                                </tr>
+                                                <tr>
+                                                    <td className="txt">Programming Lang</td>
+                                                    <td>Python, C++, JavaScript, Java</td>
+                                                </tr>
+                                                <tr>
+                                                    <td className="txt">ML Framework / Package</td>
+                                                    <td>TensorFlow, Pytorch, Numpy, Pandas, Seaborn</td>
+                                                </tr>
+                                                <tr>
+                                                    <td className="txt">Internet of Things (IoT)</td>
+                                                    <td>Raspberry Pi, NodeMCU, Arduino</td>
+                                                </tr>
+                                                <tr>
+                                                    <td className="txt">Database</td>
+                                                    <td>MySQL, PostgreSQL, SQLite, SQL Server, Oracle, MongoDB</td>
+                                                </tr>
+                                                <tr>
+                                                    <td className="txt">Simulation Software</td>
+                                                    <td>MATLAB, PSPICE, R Studio</td>
+                                                </tr>
+                                                <tr>
+                                                    <td className="txt">Miscellaneous Tool</td>
+                                                    <td>Git (Version Control), Github, Azure, Docker, Latex</td>
+                                                </tr>
                                             </tbody>
                                         </table>
                                     </div>
@@ -173,6 +173,17 @@ function Resume(props) {
                                 <div className="col-md-12">
                                     <h4>Educational Background:</h4>
                                     <div className="sub">
+                                        <div className="row">
+                                            <div className="col-md-8">
+                                                <p className="txt">M.Sc. in Engg. in Information & Communication Technology
+                                                    (ICT)</p>
+                                                <p>Bangladesh University of Engineering and Technology (BUET).</p>
+                                            </div>
+                                            <div className="col-md-4 right-center">
+                                                <p>From 2025</p>
+                                                <p> Ongoing</p>
+                                            </div>
+                                        </div>
                                         <div className="row">
                                             <div className="col-md-8">
                                                 <p className="txt">B.Sc. in Engg. in Computer Science & Engineering
@@ -428,26 +439,26 @@ function Resume(props) {
                                     <div className="sub">
                                         <table>
                                             <tbody>
-                                            <tr>
-                                                <td>Runner-Up in Project Showcasing</td>
-                                                <td>4th PSTU Independence Day</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Education board scholarship</td>
-                                                <td>PSC 2010, JSC 2014, SSC 2016</td>
-                                            </tr>
-                                            <tr>
-                                                <td>One Bank scholarship</td>
-                                                <td>2017, 2018</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Aungkur scholarship</td>
-                                                <td>2019, 2020</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Grameen Bank Scholarship</td>
-                                                <td>2014, 2016, 2019</td>
-                                            </tr>
+                                                <tr>
+                                                    <td>Runner-Up in Project Showcasing</td>
+                                                    <td>4th PSTU Independence Day</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Education board scholarship</td>
+                                                    <td>PSC 2010, JSC 2014, SSC 2016</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>One Bank scholarship</td>
+                                                    <td>2017, 2018</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Aungkur scholarship</td>
+                                                    <td>2019, 2020</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Grameen Bank Scholarship</td>
+                                                    <td>2014, 2016, 2019</td>
+                                                </tr>
                                             </tbody>
                                         </table>
                                     </div>
