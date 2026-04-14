@@ -1,16 +1,95 @@
 .about-img {
-    border: medium;
+    border: 8px solid rgba(255, 255, 255, 0.8);
     border-radius: 50px;
     height: 450px;
+    object-fit: cover;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    filter: drop-shadow(0 0 15px rgba(59, 130, 246, 0.2));
+}
+
+.about-img:hover {
+    transform: scale(1.03) rotate(-2deg);
+    box-shadow: 0 25px 30px -5px rgba(0, 0, 0, 0.15), 0 15px 15px -5px rgba(0, 0, 0, 0.08);
+    border-color: #ffffff;
+}
+
+.about-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-top: 2rem;
+    max-width: 400px;
+}
+
+.about-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.8rem;
+    color: #ffffff !important;
+    padding: 1.2rem 2rem;
+    border-radius: 50px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.project-btn {
+    background: linear-gradient(135deg, #3b82f6, #6366f1);
+    box-shadow: 0 10px 20px -5px rgba(59, 130, 246, 0.5);
+}
+
+.project-btn:hover {
+    background: linear-gradient(135deg, #2563eb, #4f46e5);
+    transform: translateY(-3px);
+    box-shadow: 0 15px 25px -5px rgba(59, 130, 246, 0.6);
+    text-decoration: none;
+}
+
+.resume-btn {
+    background: linear-gradient(135deg, #f97316, #ec4899);
+    box-shadow: 0 10px 20px -5px rgba(249, 115, 22, 0.5);
+}
+
+.resume-btn:hover {
+    background: linear-gradient(135deg, #ea580c, #db2777);
+    transform: translateY(-3px);
+    box-shadow: 0 15px 25px -5px rgba(249, 115, 22, 0.6);
+    text-decoration: none;
+}
+
+.about-btn i {
+    font-size: 1.4rem;
+    transition: transform 0.3s ease;
+}
+
+.about-btn:hover i {
+    transform: translateX(5px) scale(1.1);
 }
 
 @media (max-width: 700px) {
     .about-img {
-
         border-radius: 50%;
         height: 330px;
-        padding-right: 7%;
-        padding-left: 7%;
+        padding: 0;
+        width: 330px;
+        /* Force circle if perfectly square image, else just oval */
+        margin: 0 auto 2rem auto;
+        display: block;
+    }
 
+    .about-actions {
+        max-width: 100%;
+    }
+
+    .about-btn {
+        padding: 1rem 1.5rem;
+        font-size: 1.1rem;
     }
 }

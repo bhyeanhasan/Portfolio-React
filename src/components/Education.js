@@ -80,7 +80,7 @@ function Education() {
                                     </div>
                                 </div>
                                 <div className="justify-content-between">
-                                    <div className="top-left text-center" style={{textAlign: 'center'}}>
+                                    <div className="top-left text-center" style={{ textAlign: 'center' }}>
                                         <a
                                             target="_blank"
                                             href={edu.link}

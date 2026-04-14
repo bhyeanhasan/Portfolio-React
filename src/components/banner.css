@@ -1,38 +1,138 @@
+/* Modern Banner Styles */
+
+.banner-content {
+    padding-top: 1rem;
+}
+
+.mybg {
+    height: 84vh;
+}
 
 .logo {
-    height: 65px;
+    height: 60px;
+    filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.1));
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    color: #64748b;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin-bottom: 0px;
+    text-transform: uppercase;
 }
 
 .intro {
-    padding-bottom: 0px;
+    font-size: 6rem;
+    font-weight: 800;
+    line-height: 1.0;
     margin-bottom: 10px;
+    padding-bottom: 0px;
+    background: linear-gradient(135deg, #3b82f6, #8b5cf6, #ec4899);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
 }
 
 .designation {
-    margin-bottom: 30px;
+    margin-bottom: 40px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #1e293b;
+}
+
+.designation h3 {
+    margin-top: 10px;
+}
+
+.designer {
+    color: #3b82f6;
+    font-weight: 700;
+}
+
+/* Float Animation for Portrait */
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+.floating-portrait {
+    animation: float 6s ease-in-out infinite;
+    filter: drop-shadow(0 20px 25px rgba(0, 0, 0, 0.15));
+}
+
+.hero-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.8rem;
+    background: linear-gradient(135deg, #3b82f6, #6366f1);
+    color: #ffffff !important;
+    padding: 1rem 2rem;
+    border-radius: 50px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 10px 20px -5px rgba(59, 130, 246, 0.5);
+    letter-spacing: 0.5px;
+}
+
+.hero-btn:hover {
+    background: linear-gradient(135deg, #2563eb, #4f46e5);
+    transform: translateY(-3px);
+    box-shadow: 0 15px 25px -5px rgba(59, 130, 246, 0.6);
+    text-decoration: none;
+}
+
+.hero-btn i {
+    transition: transform 0.3s ease;
+}
+
+.hero-btn:hover i {
+    transform: translateX(5px);
 }
 
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 768px) {
+    .banner-content {
+        padding-top: 2rem;
+        text-align: center;
+    }
 
     .logo {
-        height: 55px;
+        height: 60px;
     }
 
     .intro {
-        margin-bottom: 0px;
-        padding-bottom: 0px;
-    }
-
-    .banner-content h1 {
-
-        margin-top: 5px;
-        margin-bottom: 5px;
-    }
-
-    .designation {
+        font-size: 2.8rem;
+        margin-top: 10px;
         margin-bottom: 20px;
     }
 
+    .designation {
+        font-size: 1.2rem;
+        margin-bottom: 30px;
+    }
 
+    .floating-portrait {
+        margin-top: 3rem;
+        max-width: 90%;
+    }
+
+    .mybg {
+        height: 50vh;
+    }
 }

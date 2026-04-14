@@ -28,12 +28,20 @@ function Experience(props) {
             skills: "Django, FastAPI, ML, React"
         },
         {
+            role: "Intern Software Engineer (Backend & ML)",
+            company: "Intelsense AI",
+            companyLink: "https://www.intelsense.ai/",
+            location: "Dhaka, Bangladesh",
+            date: "April 2024 - October 2024",
+            skills: "Django, FastAPI, ML, React"
+        },
+        {
             role: "Smart Health Monitoring System (IOT)",
             company: "Bangladesh Bureau of Educational Information & Statistics",
             companyLink: "https://banbeis.gov.bd/",
             location: "(BANBEIS), Ministry of Education, Bangladesh",
             date: "July 2023 - July 2024",
-            skills: "Raspberry Pi, Arduino, Sensors, React, Socket Programming, Django Channels, Channel Layers"
+            skills: "Raspberry Pi, Sensors, Socket Programming, Django Channels"
         },
         {
             role: "Research Assistant",
@@ -41,7 +49,7 @@ function Experience(props) {
             companyLink: "",
             location: "Patuakhali Science and Technology University",
             date: "March 2023 - October 2024",
-            skills: "Deep Learning, Data Science, Traffic Prediction, Spatio-Temporal Data, Time Series Analysis"
+            skills: "Deep Learning, Traffic Prediction, Spatio-Temporal Data, Time Series Analysis"
         }
 
     ];
@@ -55,35 +63,45 @@ function Experience(props) {
                         </div>
                     </div>
                 </div>
+                <div className="experience-timeline">
+                    {experiences.map((experience, index) => (
+                        <div className="timeline-item wow fadeInUp" key={index} data-wow-delay={`${index * 0.1}s`}>
+                            <div className="timeline-dot"></div>
+                            <div className="timeline-card">
+                                <h2 className="exp-role">{experience.role}</h2>
 
+                                {experience.companyLink ? (
+                                    <div className="exp-company">
+                                        <a href={experience.companyLink} target="_blank" rel="noopener noreferrer">
+                                            <i className="fa fa-building" aria-hidden="true"></i> {experience.company}
+                                        </a>
+                                    </div>
+                                ) : (
+                                    <div className="exp-company">
+                                        <i className="fa fa-building" aria-hidden="true"></i> {experience.company}
+                                    </div>
+                                )}
 
-                {experiences.map((experience, index) => (
-                    <div className="col-md-12 mb-2" key={index}>
-                        <div
-                            className={`shadow experience-border wow ${index === 0 ? 'fadeInDown' : index === 1 ? 'fadeInRight' : 'fadeInUp'} p-5 my-2`}>
-                            <div className="row">
-                                <div className={`col-md-${experience.companyLink ? '7' : '6'} experience`}>
-                                    <h3 className='experience-role'>{experience.role}</h3>
-                                    {experience.companyLink ? (
-                                        <h5 className="company">
-                                            <a href={experience.companyLink} target="_blank" rel="noopener noreferrer">
-                                                {experience.company}
-                                            </a>
-                                        </h5>
-                                    ) : (
-                                        <h5 className="company">{experience.company}</h5>
-                                    )}
-                                    <h5 className="location">{experience.location}</h5>
+                                <div className="exp-meta">
+                                    <span className="exp-meta-item">
+                                        <i className="fa fa-calendar" aria-hidden="true"></i> {experience.date}
+                                    </span>
+                                    <span className="exp-meta-item">
+                                        <i className="fa fa-map-marker" aria-hidden="true"></i> {experience.location}
+                                    </span>
                                 </div>
-                                <div
-                                    className={`col-md-${experience.companyLink ? '5' : '6'} experience-details experience`}>
-                                    <h5 className="time">{experience.date}</h5>
-                                    <h5 className="skills">{experience.skills}</h5>
+
+                                <div className="exp-skills">
+                                    {experience.skills.split(',').map((skill, skillIndex) => (
+                                        <span className="skill-badge" key={skillIndex}>
+                                            {skill.trim()}
+                                        </span>
+                                    ))}
                                 </div>
                             </div>
                         </div>
-                    </div>
-                ))}
+                    ))}
+                </div>
 
             </div>
         </section>

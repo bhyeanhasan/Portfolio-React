@@ -56,7 +56,7 @@ function Award(props) {
                             <span>{awards[0].event}</span>
                         </a>
 
-                        <br/>
+                        <br />
 
                         {awards.slice(1).map((award, index) => (
                             <div key={index}>
@@ -71,7 +71,7 @@ function Award(props) {
                                         <span key={i}>{detail}</span>
                                     ))}
                                 </a>
-                                <br/>
+                                <br />
                             </div>
                         ))}
                     </div>

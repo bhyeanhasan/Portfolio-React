@@ -44,28 +44,23 @@ function Programming() {
                     </div>
                 </div>
 
-                <div className="row">
-                    {profiles.map((profile) => (
-                        <div className="col-lg-3 col-md-6 col-6" key={profile.id}>
-                            <div className="programming single-service wow fadeInUp text-center" data-wow-duration="1s">
+                <div className="programming-grid">
+                    {profiles.map((profile, index) => (
+                        <div className="programming-card wow fadeInUp" key={profile.id} data-wow-delay={`${index * 0.1}s`}>
+                            <div className="programming-img-container">
                                 <img className="programming-img"
                                     src={profile.imageUrl}
                                     alt={profile.altText}
                                 />
-                                <br/>
-                                <a
-                                    style={{width: '90%'}}
-                                    target="_blank"
-                                    href={profile.link}
-                                    className="btn primary-btn"
-                                    rel="noopener noreferrer"
-                                    data-text={profile.name}
-                                >
-                                    {Array.from(profile.name).map((char, index) => (
-                                        <span key={index}>{char}</span>
-                                    ))}
-                                </a>
                             </div>
+                            <a
+                                target="_blank"
+                                href={profile.link}
+                                className="platform-btn"
+                                rel="noopener noreferrer"
+                            >
+                                View Profile <i className="fa fa-arrow-right" aria-hidden="true"></i>
+                            </a>
                         </div>
                     ))}
                 </div>

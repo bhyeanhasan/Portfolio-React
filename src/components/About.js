@@ -10,7 +10,7 @@ class About extends Component {
                 <div className="container">
                     <div className="row align-items-center justify-content-between">
 
-                        <div className="col-lg-6 about-left p-4">
+                        <div className="col-lg-6 about-left p-4 wow fadeInLeft" data-wow-duration="1s">
                             <img
                                 className='about-img'
                                 src="img/ppp.jpg"
@@ -18,42 +18,26 @@ class About extends Component {
                             />
                         </div>
 
-                        <div className="col-lg-5 col-md-12 about-right">
+                        <div className="col-lg-5 col-md-12 about-right wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.3s">
                             <div className="section-title">
                                 <h2>About Myself</h2>
                             </div>
 
-                            <Link to="/projects"
-                                  className="btn-block primary-btn white my-1"
-                                  data-text="Projects and Works"
-                                  rel="noopener noreferrer"
-                            >
-                                <span>P</span>
-                                <span>R</span>
-                                <span>O</span>
-                                <span>J</span>
-                                <span>E</span>
-                                <span>C</span>
-                                <span>T</span>
-                                <span>S</span>
-                            </Link>
+                            <div className="about-actions">
+                                <Link to="/projects"
+                                      className="about-btn project-btn"
+                                      rel="noopener noreferrer"
+                                >
+                                    <i className="fa fa-briefcase" aria-hidden="true"></i> Projects and Works
+                                </Link>
 
-                            <br/>
-                            <br/>
-
-
-                            <Link to="/resume"
-                                  className="btn-block primary-btn my-1"
-                                  data-text="Resume"
-                                  rel="noopener noreferrer"
-                            >
-                                <span>R</span>
-                                <span>e</span>
-                                <span>s</span>
-                                <span>u</span>
-                                <span>m</span>
-                                <span>e</span>
-                            </Link>
+                                <Link to="/resume"
+                                      className="about-btn resume-btn"
+                                      rel="noopener noreferrer"
+                                >
+                                    <i className="fa fa-file-text" aria-hidden="true"></i> View Resume
+                                </Link>
+                            </div>
                         </div>
                     </div>
                 </div>

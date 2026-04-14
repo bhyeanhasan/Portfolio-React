@@ -2,7 +2,7 @@ import React from 'react';
 import './certificate.css';
 
 function Certificates(props) {
-      const certificates = [
+    const certificates = [
         { src: "https://iili.io/RWVi0b.png" },
         { src: "img/certificate/2.jpg" },
         { src: "img/certificate/3.jpg" },
@@ -66,7 +66,7 @@ function Certificates(props) {
                                         key={index}
                                         className={`item ${index === 0 ? "active" : ""}`}
                                     >
-                                        <img src={certificate.src} alt=""/>
+                                        <img src={certificate.src} alt="" />
                                     </div>
                                 ))}
                             </div>
@@ -84,7 +84,7 @@ function Certificates(props) {
                             </a>
 
                             <a
-                                style={{float: 'right'}}
+                                style={{ float: 'right' }}
                                 href="#myCarousel"
                                 data-slide="next"
                             >

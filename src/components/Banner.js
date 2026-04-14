@@ -1,5 +1,6 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import './banner.css';
+import SocialLink from './SocialLink';
 
 class Banner extends Component {
     render() {
@@ -12,7 +13,7 @@ class Banner extends Component {
                                 <div
                                     className="wow fadeInDown"
                                     data-wow-duration="2s"
-                                    data-wow-delay="1.2s"
+                                    data-wow-delay="0.5s"
                                 >
                                     <a href="index.html">
                                         <img
@@ -23,57 +24,57 @@ class Banner extends Component {
                                     </a>
                                 </div>
 
-                                <h2 className="mt-4">Personal Portfolio of</h2>
+                                <h2 className="subtitle mt-4 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.8s">
+                                    Personal Portfolio of
+                                </h2>
                                 <hr></hr>
 
-                                <h1
-                                    className="intro wow fadeInUp text-center"
-                                    data-wow-duration="2s"
-                                    data-wow-delay="1.7s"
+                                <h2
+                                    className="intro wow fadeInUp"
+                                    data-wow-duration="1.5s"
+                                    data-wow-delay="1s"
                                 >
                                     Md. Babul Hasan
                                     <br></br>NoYoN
-                                </h1>
+                                </h2>
 
 
                                 <div
                                     className="designation wow fadeInUp"
                                     data-wow-duration="1s"
-                                    data-wow-delay="3s"
+                                    data-wow-delay="1.5s"
                                 >
-                                    Software Engineer <br/>
+                                    Software Engineer <br />
                                     <h3>
-                                        <span className="designer">( Backend & ML )</span>
+                                        <span className="designer">( AI & Backend )</span>
                                     </h3>
                                 </div>
 
                                 <a
                                     href="https://bhyeanhasan.blogspot.com"
-                                    className="primary-btn"
-                                    data-text="Visit My Blog"
+                                    className="hero-btn wow fadeInUp"
+                                    data-wow-duration="1s"
+                                    data-wow-delay="2s"
                                     target="_blank"
                                     rel="noopener noreferrer"
                                 >
-                                    <span>M</span>
-                                    <span>y</span>
-                                    <span></span>
-                                    <span>B</span>
-                                    <span>l</span>
-                                    <span>o</span>
-                                    <span>g</span>
+                                    Visit My Blog <i className="fa fa-newspaper-o" aria-hidden="true"></i>
                                 </a>
                             </div>
                         </div>
 
-                        <div className="bgdiv col-lg-6 col-md-6 align-self-end">
+                        <div className="bgdiv col-lg-6 col-md-6 text-center align-self-end">
                             <img
-                                className="img-fluid mybg"
+                                className="img-fluid mybg floating-portrait"
                                 src="img/newbg2.png"
                                 alt="Md. Babul Hasan (Noyon) bhyeanhasan"
                             />
                         </div>
                     </div>
                 </div>
+
+                {/* Embedded within Banner to share the specific layout and background logic */}
+                <SocialLink />
             </section>);
     }
 }

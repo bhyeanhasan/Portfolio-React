@@ -36,34 +36,32 @@ function Research(props) {
                     </div>
                 </div>
 
-
-                {researches.map((research, index) => (
-                    <div className="col-md-12 my-2" key={index}>
-                        <div
-                            className='shadow experience-border wow fadeInUp'>
-                            <div className="row">
-                                <div className={`col-md-12'}  p-5`}>
-                                    <h4 className='experience-role'><i style={{color: 'darkblue'}}
-                                                                       className="fa fa-book"
-                                                                       aria-hidden="true"></i> {research.title}</h4>
-                                    {research.link ? (
-                                        <h5 className="company">
-                                            <a href={research.link} target="_blank" rel="noopener noreferrer">
-                                                {research.site}
-                                            </a>
-                                        </h5>
-                                    ) : (
-                                        <h5 className="company">{research.site}</h5>
-                                    )}
-                                    <h5 className="location"><i class="fa fa-globe"
-                                                                aria-hidden="true"></i> {research.location}</h5>
-                                </div>
-
+                <div className="research-container">
+                    {researches.map((research, index) => (
+                        <div className="research-card wow fadeInUp" key={index} data-wow-delay={`${index * 0.1}s`}>
+                            <div className="research-card-content">
+                                <h1 className="research-title">
+                                    <i className="fa fa-book research-icon" aria-hidden="true"></i>
+                                    {research.title}
+                                </h1>
+                                <h5 className="research-site">
+                                    <i className="fa fa-university" aria-hidden="true"></i> {research.site}
+                                </h5>
+                                <h5 className="research-location">
+                                    <i className="fa fa-globe" aria-hidden="true"></i> {research.location}
+                                </h5>
                             </div>
-                        </div>
-                    </div>
-                ))}
+                            {research.link && (
+                                <div className="research-actions">
 
+                                    <a href={research.link} target="_blank" rel="noopener noreferrer" className="read-paper-btn">
+                                        Read Paper <i className="fa fa-arrow-right" aria-hidden="true"></i>
+                                    </a>
+                                </div>
+                            )}
+                        </div>
+                    ))}
+                </div>
             </div>
         </section>
     );

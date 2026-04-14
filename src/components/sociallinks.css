@@ -1,6 +1,8 @@
 .swiper-container {
-    width: 100%;
-    height: 200px; /* You can adjust the height as needed */
+    width: 90%;
+    padding: 2rem 0;
+    /* Adding padding so shadows aren't clipped */
+    min-height: 50px;
 }
 
 .swiper-slide {
@@ -8,29 +10,79 @@
     justify-content: center;
     align-items: center;
     text-align: center;
+    padding: 1.5rem 0.5rem;
 }
 
-
-
 .brand-wrap {
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
 
+.social-card {
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 20px;
+    padding: 2rem 1rem;
+    box-shadow: 0 4px 10px -2px rgba(0, 0, 0, 0.05);
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    border: 1px solid rgba(0, 0, 0, 0.04);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    max-width: 180px;
+    margin: 0 auto;
+    text-decoration: none !important;
+}
+
+.social-card:hover {
+    transform: translateY(-8px) scale(1.05);
+    /* The brand color shadow uses CSS vars injected from React */
+    box-shadow: 0 15px 30px -5px var(--hover-color, rgba(0, 0, 0, 0.2)), 0 8px 10px -5px rgba(0, 0, 0, 0.05);
+    border-color: var(--hover-color, transparent);
+}
+
+.social-card i {
+    font-size: 3.5rem;
+    color: var(--brand-color);
+    margin-bottom: 1rem;
+    transition: transform 0.4s ease;
+    filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.1));
+}
+
+.social-card:hover i {
+    transform: rotate(5deg) scale(1.1);
+}
+
+.social-name {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #1e293b;
+    margin: 0;
+    transition: color 0.3s ease;
+}
+
+.social-card:hover .social-name {
+    color: var(--brand-color);
 }
 
 
 @media only screen and (max-width: 700px) {
+    .social-card {
+        padding: 1.2rem 0.5rem;
+        border-radius: 15px;
+    }
 
-    .social {
-        font-size: 12px;
+    .social-card i {
+        font-size: 2.2rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .social-name {
+        font-size: 0.85rem;
     }
 
     .brand-wrap {
-        padding-left: 20px;
-        padding-right: 20px;
-        padding-top: 20px;
-        padding-bottom: 20px;
-        border-radius: 30px;
+        padding: 10px;
     }
-
 }

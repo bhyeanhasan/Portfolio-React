@@ -52,12 +52,12 @@ function Extracurricular(props) {
                     {activities.map((activity, index) => (
                         <div key={index} className="col-lg-4 col-md-6 col-6">
                             <div className="extracurricular single-service wow fadeInUp text-center"
-                                 data-wow-duration="1s">
+                                data-wow-duration="1s">
                                 <img className="extra-curricular-img"
-                                     src={activity.imgSrc}
-                                     alt={activity.altText}
+                                    src={activity.imgSrc}
+                                    alt={activity.altText}
                                 />
-                                <br/>
+                                <br />
                                 <a
                                     target="_blank"
                                     rel="noopener noreferrer"
