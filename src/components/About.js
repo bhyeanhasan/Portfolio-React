@@ -1,7 +1,8 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import './about.css';
+import profile from '../data/profile';
 
-import {Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 
 class About extends Component {
     render() {
@@ -13,8 +14,8 @@ class About extends Component {
                         <div className="col-lg-6 about-left p-4 wow fadeInLeft" data-wow-duration="1s">
                             <img
                                 className='about-img'
-                                src="img/ppp.jpg"
-                                alt="Md. Babul Hasan (Noyon) bhyeanhasan"
+                                src={profile.aboutImage}
+                                alt={`${profile.name} (${profile.nickname})`}
                             />
                         </div>
 
@@ -25,15 +26,15 @@ class About extends Component {
 
                             <div className="about-actions">
                                 <Link to="/projects"
-                                      className="about-btn project-btn"
-                                      rel="noopener noreferrer"
+                                    className="about-btn project-btn"
+                                    rel="noopener noreferrer"
                                 >
                                     <i className="fa fa-briefcase" aria-hidden="true"></i> Projects and Works
                                 </Link>
 
                                 <Link to="/resume"
-                                      className="about-btn resume-btn"
-                                      rel="noopener noreferrer"
+                                    className="about-btn resume-btn"
+                                    rel="noopener noreferrer"
                                 >
                                     <i className="fa fa-file-text" aria-hidden="true"></i> View Resume
                                 </Link>

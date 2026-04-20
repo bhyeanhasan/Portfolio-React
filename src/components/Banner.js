@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './banner.css';
 import SocialLink from './SocialLink';
+import profile from '../data/profile';
 
 class Banner extends Component {
     render() {
@@ -18,15 +19,15 @@ class Banner extends Component {
                                     <a href="index.html">
                                         <img
                                             className="logo"
-                                            alt="logo of bhyeanhasan"
-                                            src="img/bh_logo.png"
+                                            alt={`logo of ${profile.name}`}
+                                            src={profile.logo}
                                         />
                                     </a>
                                 </div>
 
-                                <h2 className="subtitle mt-4 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.8s">
+                                <h3 className="subtitle mt-4 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.8s">
                                     Personal Portfolio of
-                                </h2>
+                                </h3>
                                 <hr></hr>
 
                                 <h2
@@ -34,8 +35,8 @@ class Banner extends Component {
                                     data-wow-duration="1.5s"
                                     data-wow-delay="1s"
                                 >
-                                    Md. Babul Hasan
-                                    <br></br>NoYoN
+                                    {profile.name}
+                                    <br></br>{profile.nickname}
                                 </h2>
 
 
@@ -44,14 +45,14 @@ class Banner extends Component {
                                     data-wow-duration="1s"
                                     data-wow-delay="1.5s"
                                 >
-                                    Software Engineer <br />
+                                    {profile.designation} <br />
                                     <h3>
-                                        <span className="designer">( AI & Backend )</span>
+                                        <span className="designer">{profile.subDesignation}</span>
                                     </h3>
                                 </div>
 
                                 <a
-                                    href="https://bhyeanhasan.blogspot.com"
+                                    href={profile.blog}
                                     className="hero-btn wow fadeInUp"
                                     data-wow-duration="1s"
                                     data-wow-delay="2s"
@@ -66,8 +67,8 @@ class Banner extends Component {
                         <div className="bgdiv col-lg-6 col-md-6 text-center align-self-end">
                             <img
                                 className="img-fluid mybg floating-portrait"
-                                src="img/newbg2.png"
-                                alt="Md. Babul Hasan (Noyon) bhyeanhasan"
+                                src={profile.mainImage}
+                                alt={`${profile.name} (${profile.nickname})`}
                             />
                         </div>
                     </div>

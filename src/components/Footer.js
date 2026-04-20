@@ -4,14 +4,14 @@ function Footer(props) {
     const currentYear = new Date().getFullYear();
 
     return (
-        <footer className="footer-area" style={{margin: 0, padding: 0}}>
+        <footer className="footer-area" style={{ margin: 0, padding: 0 }}>
             <div className="container">
                 <div className="row justify-content-center">
                     <div className="col-lg-12">
                         <div className="footer-top flex-column mt-3">
                             <div className="footer-logo">
                                 <a href="#">
-                                    <img style={{height: '60px'}} src="img/bh_logo.png" alt="Logo"/>
+                                    <img style={{ height: '60px' }} src="img/bh_logo.png" alt="Logo" />
                                 </a>
                                 <h3 className="p-1">Thanks for Visiting</h3>
                             </div>
@@ -24,8 +24,8 @@ function Footer(props) {
                         <a href="https://about.me/bhyeanhasan" target="_blank" rel="noopener noreferrer">
                             Md. Babul Hasan (Noyon)
                         </a>
-                        <br/>
-                        <h6 style={{color:'darkblue'}}> 1024312001@iict.buet.ac.bd - bhyean16@cse.pstu.ac.bd</h6>
+                        <br />
+                        <h6 style={{ color: 'darkblue' }}> 1024312001@iict.buet.ac.bd - bhyean16@cse.pstu.ac.bd</h6>
                         Copyright &copy; {currentYear}
 
 

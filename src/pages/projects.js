@@ -70,8 +70,8 @@ function Projects(props) {
                         <div className="text-center">
                             <h1>PROJECTS</h1>
                             <h4>Check the latest projects <a target={'_blank'}
-                                                                href={'https://github.com/bhyeanhasan'}><i class="fa fa-github" aria-hidden="true"></i> Github
-                                </a></h4>
+                                href={'https://github.com/bhyeanhasan'}><i class="fa fa-github" aria-hidden="true"></i> Github
+                            </a></h4>
                             <hr></hr>
 
                         </div>
@@ -83,34 +83,34 @@ function Projects(props) {
                                 {projects.map((project, index) => (
                                     <div className="col-md-6 my-5" key={index}>
                                         <div className="card shadow-lg mx-3">
-                                            <img src={project.image} className="card__image" alt={project.title}/>
+                                            <img src={project.image} className="card__image" alt={project.title} />
                                             <div className="card__overlay">
                                                 <div className="card__header">
                                                     <svg className="card__arc" xmlns="http://www.w3.org/2000/svg">
-                                                        <path/>
+                                                        <path />
                                                     </svg>
-                                                    <div style={{width: '100%'}} className="card__header-text">
+                                                    <div style={{ width: '100%' }} className="card__header-text">
                                                         <h3 className="card__title text-center">{project.title}</h3>
                                                         <div className="d-flex justify-content-between mt-2">
 
                                                             {project.liveView ? (
 
-                                                                    <a
-                                                                        target="_blank"
-                                                                        href={project.liveView}
-                                                                        style={{
-                                                                            borderRadius: '20px',
-                                                                            borderStyle: 'solid',
-                                                                            color: 'white',
-                                                                            fontSize: '12px'
-                                                                        }}
-                                                                        className="btn btn-danger"
-                                                                        rel="noopener noreferrer"
-                                                                    >
-                                                                        <i className="fa fa-paper-plane p-1"
-                                                                           aria-hidden="true"></i>
-                                                                        Live View
-                                                                    </a>) :
+                                                                <a
+                                                                    target="_blank"
+                                                                    href={project.liveView}
+                                                                    style={{
+                                                                        borderRadius: '20px',
+                                                                        borderStyle: 'solid',
+                                                                        color: 'white',
+                                                                        fontSize: '12px'
+                                                                    }}
+                                                                    className="btn btn-danger"
+                                                                    rel="noopener noreferrer"
+                                                                >
+                                                                    <i className="fa fa-paper-plane p-1"
+                                                                        aria-hidden="true"></i>
+                                                                    Live View
+                                                                </a>) :
                                                                 (<a></a>)
                                                             }
                                                             <a
@@ -126,7 +126,7 @@ function Projects(props) {
                                                                 rel="noopener noreferrer"
                                                             >
                                                                 <i className="fa fa-github-square p-1"
-                                                                   aria-hidden="true"></i>
+                                                                    aria-hidden="true"></i>
                                                                 Source Code
                                                             </a>
 
@@ -144,7 +144,7 @@ function Projects(props) {
                     </div>
                 </div>
             </div>
-            <Footer/>
+            <Footer />
 
         </section>
 

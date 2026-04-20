@@ -1,0 +1,31 @@
+const certificates = [
+    { src: "https://iili.io/RWVi0b.png" },
+    { src: "img/certificate/2.jpg" },
+    { src: "img/certificate/3.jpg" },
+    { src: "img/certificate/4.jpg" },
+    { src: "img/certificate/5.jpg" },
+    { src: "img/certificate/6.jpg" },
+    { src: "img/certificate/7.jpg" },
+    { src: "img/certificate/8.jpg" },
+    { src: "img/certificate/9.jpg" },
+    { src: "img/certificate/b1.jpg" },
+    { src: "img/certificate/b2.jpg" },
+    { src: "https://iili.io/RWVyLF.png" },
+    { src: "https://iili.io/RWWHqg.png" },
+    { src: "img/certificate/c1.jpg" },
+    { src: "img/certificate/c2.jpg" },
+    { src: "img/certificate/c3.jpg" },
+    { src: "img/certificate/c4.jpg" },
+    { src: "img/certificate/c5.jpg" },
+    { src: "img/certificate/c6.jpg" },
+    { src: "img/certificate/c7.jpg" },
+    { src: "img/certificate/d1.jpg" },
+    { src: "img/certificate/d2.jpg" },
+    { src: "img/certificate/d3.jpg" },
+    { src: "img/certificate/d4.jpg" },
+    { src: "img/certificate/d5.jpg" },
+    { src: "img/certificate/d6.jpg" },
+    { src: "img/certificate/d7.jpg" }
+];
+
+export default certificates;
