@@ -11,7 +11,7 @@ const profile = {
     linkedin: "https://www.linkedin.com/in/bhyeanhasan/",
     blog: "https://bhyeanhasan.blogspot.com/",
     logo: "img/bh_logo.png",
-    mainImage: "img/newbg2.png",
+    mainImage: "img/suit.png",
     profileImage: "https://iili.io/B2qc2j.jpg",
     aboutImage: "img/ppp.jpg",
     mission: "I am eager to leverage my academic background, technical skills, and passion to embark on a dynamic career path. Seeking a challenging role in software development or artificial intelligence where I can apply my knowledge and upgrade my skills.",
